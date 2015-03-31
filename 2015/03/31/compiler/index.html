@@ -4,43 +4,37 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Anotherhome Coding Branch</title>
+    <title>一个完整编译器的实现 | Anotherhome Coding Branch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="DIYgod">
     
 
     
-    <meta name="description" content="一个完整编译器的实现标签（空格分隔）： 未分类
-
-
-图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
+    <meta name="description" content="图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
 
 本系列将展示一个完整编译器从无到有的实现过程.
 目标是从一个C语言的不完全子集翻译到x86汇编语言, 将借助 Lex Yacc LLVM 等工具, 另外暂定实现垃圾回收及面向对象.
-全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2">
+全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2] 查看.
+主要参考 虎书(《现代编译原理–C语言实">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Anotherhome Coding Branch">
+<meta property="og:title" content="一个完整编译器的实现">
 <meta property="og:url" content="http://diygod.github.io/2015/03/31/compiler/index.html">
 <meta property="og:site_name" content="Anotherhome Coding Branch">
-<meta property="og:description" content="一个完整编译器的实现标签（空格分隔）： 未分类
-
-
-图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
+<meta property="og:description" content="图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
 
 本系列将展示一个完整编译器从无到有的实现过程.
 目标是从一个C语言的不完全子集翻译到x86汇编语言, 将借助 Lex Yacc LLVM 等工具, 另外暂定实现垃圾回收及面向对象.
-全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2">
+全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2] 查看.
+主要参考 虎书(《现代编译原理–C语言实">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Anotherhome Coding Branch">
-<meta name="twitter:description" content="一个完整编译器的实现标签（空格分隔）： 未分类
-
-
-图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
+<meta name="twitter:title" content="一个完整编译器的实现">
+<meta name="twitter:description" content="图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
 
 本系列将展示一个完整编译器从无到有的实现过程.
 目标是从一个C语言的不完全子集翻译到x86汇编语言, 将借助 Lex Yacc LLVM 等工具, 另外暂定实现垃圾回收及面向对象.
-全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2">
+全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2] 查看.
+主要参考 虎书(《现代编译原理–C语言实">
 
     
     <link rel="alternative" href="/atom.xml" title="Anotherhome Coding Branch" type="application/atom+xml">
@@ -98,14 +92,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/03/31/compiler/" title="" itemprop="url"></a>
+      <a href="/2015/03/31/compiler/" title="一个完整编译器的实现" itemprop="url">一个完整编译器的实现</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://diygod.github.io/about" title="DIYgod" target="_blank" itemprop="author">DIYgod</a>
 		
   <p class="article-time">
-    <time datetime="2015-03-31T07:28:47.000Z" itemprop="datePublished"> 发表于 2015-03-31</time>
+    <time datetime="2015-03-31T07:34:58.000Z" itemprop="datePublished"> 发表于 2015-03-31</time>
     
   </p>
 </header>
@@ -114,19 +108,16 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一个完整编译器的实现"><span class="toc-number">1.</span> <span class="toc-text">一个完整编译器的实现</span></a></li></ol>
+			
 		
 		</div>
 		
-		<h1 id="一个完整编译器的实现">一个完整编译器的实现</h1><p>标签（空格分隔）： 未分类</p>
+		<p>图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)</p>
 <hr>
-<blockquote>
-<p>图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)</p>
-</blockquote>
 <p>本系列将展示一个完整编译器从无到有的实现过程.</p>
-<p>目标是从一个C语言的不完全子集翻译到x86汇编语言, 将借助 Lex Yacc LLVM 等工具, 另外暂定实现垃圾回收及面向对象.</p>
+<p>目标是从一个C语言的不完全子集翻译到x86汇编语言, 将借助 <code>Lex</code> <code>Yacc</code> <code>LLVM</code> 等工具, 另外暂定实现垃圾回收及面向对象.</p>
 <p>全部代码托管在 [GitHub][1].     各阶段的源代码在 [这里][2] 查看.</p>
-<p>主要参考 虎书(《现代编译原理–C语言实现》), 根据此书, 暂将实现分为11个阶段: 词法分析 语法分析 语义动作 语义分析 栈帧布局 翻译 规范化 指令选择 控制流分析 数据流分析 寄存器分配 代码流出.</p>
+<p>主要参考 虎书(《现代编译原理–C语言实现》), 根据此书, 暂将实现分为11个阶段: <code>词法分析</code> <code>语法分析</code> <code>语义动作</code> <code>语义分析</code> <code>栈帧布局</code> <code>翻译</code> <code>规范化</code> <code>指令选择</code> <code>控制流分析</code> <code>数据流分析</code> <code>寄存器分配</code> <code>代码流出</code>.</p>
 <p>已完成：</p>
 <p>[《一个完整编译器的实现—词法分析 | Anotherhome》][3]</p>
 <p>[《一个完整编译器的实现—语法分析 | Anotherhome》][4]</p>
@@ -143,7 +134,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://diygod.github.io/2015/03/31/compiler/" data-title="Anotherhome Coding Branch" data-tsina="DIYgod酱" class="share clearfix">
+	  <div data-url="http://diygod.github.io/2015/03/31/compiler/" data-title="一个完整编译器的实现 | Anotherhome Coding Branch" data-tsina="DIYgod酱" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -169,7 +160,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/03/31/compiler/" data-title="" data-url="http://diygod.github.io/2015/03/31/compiler/"></div>
+	<div class="ds-thread" data-thread-key="2015/03/31/compiler/" data-title="一个完整编译器的实现" data-url="http://diygod.github.io/2015/03/31/compiler/"></div>
 </section>
 
 
@@ -179,7 +170,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一个完整编译器的实现"><span class="toc-number">1.</span> <span class="toc-text">一个完整编译器的实现</span></a></li></ol>
+ 
  
   </div>
 
