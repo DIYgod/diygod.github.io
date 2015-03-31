@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Anotherhome Coding Branch</title>
+    <title>categories | Anotherhome Coding Branch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="DIYgod">
@@ -13,12 +13,12 @@
     
     <meta name="description" content="Anotherhome Code Coder">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Anotherhome Coding Branch">
-<meta property="og:url" content="http://diygod.github.io/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://diygod.github.io/categories/index.html">
 <meta property="og:site_name" content="Anotherhome Coding Branch">
 <meta property="og:description" content="Anotherhome Code Coder">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Anotherhome Coding Branch">
+<meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="Anotherhome Code Coder">
 
     
@@ -31,9 +31,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-  <body>
-    <header>
-      <div>
+    <body>
+      <header>
+        <div>
 		
 			<div id="imglogo">
 				<a href="/"><img src="/img/author.gif" alt="Anotherhome Coding Branch" title="Anotherhome Coding Branch"/></a>
@@ -69,92 +69,20 @@
 				</ul>
 			</nav>			
 </div>
-    </header>
-    <div id="container">
-      <div id="main">
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/03/31/compiler/" title="" itemprop="url">
-  
-    <h1 itemprop="name"></h1>
-    
-     
-           <p itemprop="description" >一个完整编译器的实现标签（空格分隔）： 未分类
-
-
-图灵生机器，机器生汇编，汇编生 C，C 生万物 (来自知乎用户 Joy Neop)
-
-本系列将展示一个完整编译器从无到有的实现过程.
-目标是从一个C语言的不完全子集翻译到x86汇编语言, 将借助 Lex Yacc LLVM 等工</p>
-        
-    
-    <time datetime="2015-03-31T07:28:47.000Z" itemprop="datePublished">2015-03-31</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/03/30/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-        
-    
-    <time datetime="2015-03-30T11:13:44.000Z" itemprop="datePublished">2015-03-30</time>
-  </a>
-</section>
-
-
-
-
-
-
+      </header>
+      <div id="container">
+          
+<div class="archive-title" >
+<h2 class="category-icon">分类</h2>
 
 </div>
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="http://www.anotherhome.net" target="_blank" title="我的主站点">Anotherhome</a>
-            
-          </li>
-        
-    </ul>
+<div id="main" class="archive-part">
+<div class="all-list-box"></div>
 </div>
 
-  
 
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
+      </div>
+      <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -194,7 +122,7 @@
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
+      <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
@@ -263,6 +191,24 @@ $(document).ready(function(){
 
 
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var list    = $('.archive-title a'),
+      box     = $('.all-list-box'),
+      first   = $('.archive-title a:first-of-type');
+      box.load(first.attr('data-src').toString()+' #archive-page');
+      first.addClass('current');
+  list.each(function(){
+    $(this).click(function(){
+      var listSrc=$(this).attr('data-src').toString()+' #archive-page';
+      box.load(listSrc);
+      list.removeClass('current');
+      $(this).addClass('current');
+     });  
+    });
+  }); 
+</script>
+
 
 
 
@@ -302,5 +248,5 @@ ga('send', 'pageview');
 
 <!-- Tiny_search End -->
 
-  </body>
- </html>
+    </body>
+   </html>
