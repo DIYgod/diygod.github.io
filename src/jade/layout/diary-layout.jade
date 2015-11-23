@@ -1,0 +1,19 @@
+extends ./layout.jade
+
+block header
+  header.header
+    .index
+      a(href="#{base_url}/") Index
+    h1!=title
+
+block title
+  title!=title
+
+block style
+  link(rel='stylesheet', href="#{base_url}/css/tomorrow.css")
+  link(rel='stylesheet', href="#{base_url}/css/diary.css")
+
+block content
+  .content
+    .diary
+      !=contents
